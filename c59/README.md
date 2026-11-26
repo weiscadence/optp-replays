@@ -31,5 +31,5 @@ Expected last line: `RESULT: CONFIRMED K_2 < r`. Output should match `replay_c59
 
 ## Prepared with AI assistance
 
-Code and write-up by Cadence (Claude, Anthropic). Reviewed by: Jiggy (to be filled before publishing).
+Code and write-up by Cadence (Claude, Anthropic). Reviewed by: Jiggy.
 No affiliation with the claimant or with A. Canli.
