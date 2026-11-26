@@ -1,0 +1,12 @@
+K=5 r=[189, 625] B=0.993156050554
+  Z0 Hermitian: PASS
+  P,Q Hermitian: PASS
+  cube blocks PD (36/36): PASS
+    main LMI i=0: PD
+    main LMI i=1: PD
+  2 main LMIs PD: PASS
+  B = 0.993156050554 <= 0.99315606 (cert states 0.99315605..): PASS
+  tail <= 0.0059697979 (<= 0.0059699): PASS
+  B + tail = 0.9991258484 < 1: PASS
+  claimed total 0.99912585 >= B+tail: PASS
+RESULT: CONFIRMED  sum_{n<=5} r^n|H_n|_1 <= B and B+tail<1 => K_2 >= r

@@ -1,0 +1,157 @@
+[baseline]
+  Z0 Hermitian: PASS
+  P,Q Hermitian: PASS
+  cube blocks PD (36/36): PASS
+    main LMI i=0: PD
+    main LMI i=1: PD
+  2 main LMIs PD: PASS
+  B = 0.993156050554 <= 0.99315606 (cert states 0.99315605..): PASS
+  tail <= 0.0059697979 (<= 0.0059699): PASS
+  B + tail = 0.9991258484 < 1: PASS
+[canary] r = 0.3028 (cert built for 0.3024)
+  Z0 Hermitian: PASS
+    block (2, 0)|0 NOT PD
+    block (1, 1)|0 NOT PD
+    block (0, 2)|0 NOT PD
+    block (3, 0)|0 NOT PD
+    block (2, 1)|0 NOT PD
+    block (1, 2)|0 NOT PD
+    block (0, 3)|0 NOT PD
+    block (4, 0)|0 NOT PD
+    block (3, 1)|0 NOT PD
+    block (2, 2)|0 NOT PD
+    block (1, 3)|0 NOT PD
+    block (0, 4)|0 NOT PD
+    block (5, 0)|0 NOT PD
+    block (4, 1)|0 NOT PD
+    block (3, 2)|0 NOT PD
+    block (2, 3)|0 NOT PD
+    block (1, 4)|0 NOT PD
+    block (0, 5)|0 NOT PD
+    block (2, 0)|1 NOT PD
+    block (1, 1)|1 NOT PD
+    block (0, 2)|1 NOT PD
+    block (3, 0)|1 NOT PD
+    block (2, 1)|1 NOT PD
+    block (1, 2)|1 NOT PD
+    block (0, 3)|1 NOT PD
+    block (4, 0)|1 NOT PD
+    block (3, 1)|1 NOT PD
+    block (2, 2)|1 NOT PD
+    block (1, 3)|1 NOT PD
+    block (0, 4)|1 NOT PD
+    block (5, 0)|1 NOT PD
+    block (4, 1)|1 NOT PD
+    block (3, 2)|1 NOT PD
+    block (2, 3)|1 NOT PD
+    block (1, 4)|1 NOT PD
+    block (0, 5)|1 NOT PD
+  P,Q Hermitian: PASS
+  cube blocks PD (0/36): FAIL
+    main LMI i=0: NOT PD
+    main LMI i=1: NOT PD
+  2 main LMIs PD: FAIL
+  B = 0.993156050554 <= 0.99315606 (cert states 0.99315605..): PASS
+  tail <= 0.0060211028 (<= 0.0059699): FAIL
+  B + tail = 0.9991771533 < 1: PASS
+   -> rejected (good)
+[canary] r = 0.31
+  Z0 Hermitian: PASS
+    block (2, 0)|0 NOT PD
+    block (1, 1)|0 NOT PD
+    block (0, 2)|0 NOT PD
+    block (3, 0)|0 NOT PD
+    block (2, 1)|0 NOT PD
+    block (1, 2)|0 NOT PD
+    block (0, 3)|0 NOT PD
+    block (4, 0)|0 NOT PD
+    block (3, 1)|0 NOT PD
+    block (2, 2)|0 NOT PD
+    block (1, 3)|0 NOT PD
+    block (0, 4)|0 NOT PD
+    block (5, 0)|0 NOT PD
+    block (4, 1)|0 NOT PD
+    block (3, 2)|0 NOT PD
+    block (2, 3)|0 NOT PD
+    block (1, 4)|0 NOT PD
+    block (0, 5)|0 NOT PD
+    block (2, 0)|1 NOT PD
+    block (1, 1)|1 NOT PD
+    block (0, 2)|1 NOT PD
+    block (3, 0)|1 NOT PD
+    block (2, 1)|1 NOT PD
+    block (1, 2)|1 NOT PD
+    block (0, 3)|1 NOT PD
+    block (4, 0)|1 NOT PD
+    block (3, 1)|1 NOT PD
+    block (2, 2)|1 NOT PD
+    block (1, 3)|1 NOT PD
+    block (0, 4)|1 NOT PD
+    block (5, 0)|1 NOT PD
+    block (4, 1)|1 NOT PD
+    block (3, 2)|1 NOT PD
+    block (2, 3)|1 NOT PD
+    block (1, 4)|1 NOT PD
+    block (0, 5)|1 NOT PD
+  P,Q Hermitian: PASS
+  cube blocks PD (0/36): FAIL
+    main LMI i=0: NOT PD
+    main LMI i=1: NOT PD
+  2 main LMIs PD: FAIL
+  B = 0.993156050554 <= 0.99315606 (cert states 0.99315605..): PASS
+  tail <= 0.0070118708 (<= 0.0059699): FAIL
+  B + tail = 1.0001679213 < 1: FAIL
+   -> rejected (good)
+[canary] P[(3,1)|0][5,5] made hugely negative
+  Z0 Hermitian: PASS
+    block (3, 1)|0 NOT PD
+  P,Q Hermitian: PASS
+  cube blocks PD (35/36): FAIL
+    main LMI i=0: PD
+    main LMI i=1: PD
+  2 main LMIs PD: PASS
+  B = 0.993156050554 <= 0.99315606 (cert states 0.99315605..): PASS
+  tail <= 0.0059697979 (<= 0.0059699): PASS
+  B + tail = 0.9991258484 < 1: PASS
+   -> rejected (good)
+[canary] Z0_block[3,3] shifted by -10
+  Z0 Hermitian: PASS
+  P,Q Hermitian: PASS
+  cube blocks PD (36/36): PASS
+    main LMI i=0: NOT PD
+    main LMI i=1: NOT PD
+  2 main LMIs PD: FAIL
+  B = 0.993156050554 <= 0.99315606 (cert states 0.99315605..): PASS
+  tail <= 0.0059697979 (<= 0.0059699): PASS
+  B + tail = 0.9991258484 < 1: PASS
+   -> rejected (good)
+[canary] tail share: 1-B = 0.006844, tail = 0.005970, remaining margin = 0.000874
+[canary] B inflated to 0.9941: B+tail = 1.000070 -> rejected (good)
+[canary] claimed total 0.9930 (< true B+tail)
+  Z0 Hermitian: PASS
+  P,Q Hermitian: PASS
+  cube blocks PD (36/36): PASS
+    main LMI i=0: PD
+    main LMI i=1: PD
+  2 main LMIs PD: PASS
+  B = 0.993156050554 <= 0.99315606 (cert states 0.99315605..): PASS
+  tail <= 0.0059697979 (<= 0.0059699): PASS
+  B + tail = 0.9991258484 < 1: PASS
+  claimed total 0.9930 >= B+tail: FAIL
+   -> rejected (good)
+[canary] B deflated by 1% (claims a better bound)
+  Z0 Hermitian: PASS
+  P,Q Hermitian: PASS
+  cube blocks PD (36/36): PASS
+    main LMI i=0: NOT PD
+    main LMI i=1: NOT PD
+  2 main LMIs PD: FAIL
+  B = 0.983156050554 <= 0.99315606 (cert states 0.99315605..): PASS
+  tail <= 0.0059697979 (<= 0.0059699): PASS
+  B + tail = 0.9891258484 < 1: PASS
+   -> rejected (good)
+baseline ok: True | canaries all rejected: True
+
+real	4m45.256s
+user	4m44.058s
+sys	0m0.572s
